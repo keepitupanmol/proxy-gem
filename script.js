@@ -26,4 +26,4 @@ const interval = setInterval(() => {
     }, 400);
   }
 
-}, 20); // faster + smooth
+}, 10); // faster + smooth
