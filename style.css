@@ -11,6 +11,7 @@ body {
   text-align: center;
 }
 
+/* CARD */
 .card {
   margin: 20vh auto 0;
   padding: 28px;
@@ -23,6 +24,7 @@ body {
   border: 1px solid rgba(0,255,150,0.15);
 }
 
+/* ICON */
 .app-icon {
   width: 72px;
   height: 72px;
@@ -31,6 +33,7 @@ body {
   border-radius: 16px;
 }
 
+/* TITLE */
 h2 {
   margin: 10px 0 0;
   font-size: 22px;
@@ -38,6 +41,7 @@ h2 {
   text-shadow: 0 0 8px rgba(0,255,156,0.6);
 }
 
+/* PROGRESS BAR */
 .progress-bar {
   width: 100%;
   height: 8px;
@@ -56,12 +60,14 @@ h2 {
   box-shadow: 0 0 10px rgba(0,255,150,0.6);
 }
 
+/* PERCENT TEXT */
 .percent {
   margin-bottom: 18px;
   font-weight: 700;
   color: #00ff9c;
 }
 
+/* STEPS */
 .steps div {
   text-align: left;
   margin: 10px 0;
@@ -83,9 +89,10 @@ h2 {
 }
 
 .steps .active {
-  color: #00ff99;
+  color: #00ff9c;
 }
 
+/* HEADER */
 .header {
   background: #79b3c7;
   padding: 10px;
@@ -93,29 +100,46 @@ h2 {
   font-size: 14px;
 }
 
+/* TITLE */
 .title {
   margin: 18px 12px;
   font-size: 18px;
 }
 
+/* VIDEO FIX (MAIN ISSUE FIXED HERE) */
 .video-box {
   width: 100%;
   max-width: 500px;
-  margin: auto;
+  margin: 0 auto;
   position: relative;
   padding-top: 56.25%; /* 16:9 ratio */
+  overflow: hidden;
+  border-radius: 12px;
 }
 
+/* iframe (Google Drive / YouTube) */
 .video-box iframe {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   width: 100%;
   height: 100%;
-  border-radius: 12px;
+  transform: translate(-50%, -50%);
   border: none;
 }
 
+/* video tag (if using local video) */
+.video-box video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* important for mobile */
+  transform: translate(-50%, -50%);
+}
+
+/* INSTALL CARD */
 .install-card {
   margin: 24px auto;
   padding: 20px;
@@ -124,6 +148,7 @@ h2 {
   border-radius: 15px;
 }
 
+/* INSTALL ICON */
 .install-card img {
   width: 62px;
   height: 62px;
@@ -140,6 +165,7 @@ h2 {
   opacity: 0.9;
 }
 
+/* BUTTON */
 .btn {
   display: block;
   margin-top: 16px;
